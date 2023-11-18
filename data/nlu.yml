@@ -3,89 +3,88 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - hola
+    - buen dia
+    - alo
+    - buenas
+    - como va
+    - buenas tardes
+    - buenos dias
+    - como andan
+    - como estas
+    - como andas
+    - como te va
+    - buenas noches
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - chau
+    - adios
+    - nos vemos
+    - hablamos
+    - gracias a ustedes
+    - buen fin de semana
+    - buenas ventas
+
+- intent: start
+  examples: |
+    - empezamos
+    - comenzamos
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - si
+    - dale
+    - bueno
+    - suena bien
+    - correcto
+    - sisi
 
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - nono
+    - no no
+    - no quiero abrir una cuenta
+    - no, no quiero
+    - no, paso
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - todo bien
+    - bien
+    - excelente
+    - barbaro
+    - perfecto
+    - de diez
+    - de 10
+    - todo joya
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - Todo mal
+    - Horrible
+    - Para atras
+    - preocupado
+    - bastante mal
+    - mal
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - sos un bot?
+    - sos un humano?
+    - quien sos?
+    - estoy hablando con una persona?
+    - estoy hablando con un bot?
+
+- intent: agradecimiento
+  examples: |
+    - gracias
+    - gracias!
+    - muchas gracias!
+    - muchas gracias
+    - te agradezco
+    - agradecido
+    - muy agradecido
+
+constrain_similarities: true

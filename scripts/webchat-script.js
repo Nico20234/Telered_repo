@@ -1,7 +1,7 @@
         export default function () {
         let e = document.createElement("script"),
             t = document.head || document.getElementsByTagName("head")[0];
-        //localStorage.clear(); //Borrar Historial
+        localStorage.clear(); //Borrar Historial
         (e.src =
             "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
             (e.async = !0),
@@ -9,10 +9,10 @@
                 window.WebChat.default(
                     {
                         initPayload: '/start',
-                        customData: { language: "en" },
+                        customData: { language: "es" },
                         socketUrl: "http://localhost:5005",
-                        title: 'Imagine One',
-                        subtitle: '🟢 Disponible',
+                        title: 'Telered',
+                        subtitle: 'Disponible',
                         storage: 'session',
                         profileAvatar: "./images/logoi1.png",
                         openLauncherImage: "./images/abrirChat.png",

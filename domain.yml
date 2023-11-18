@@ -3,31 +3,61 @@ version: "3.1"
 intents:
   - greet
   - goodbye
+  - start
   - affirm
   - deny
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - agradecimiento
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "¡Hola! ¿Como estas?"
+  - text: "¿Qué tal estás?"
+  - text: "¿Cómo estás hoy?"
+  - text: "¿Cómo andás?"
+  - text: "¿Cómo te va?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "¡Que te mejores!"
+  - text: "¡Ya va a mejorar todo!"
+  - text: "¡Arriba el ánimo!"
+  - text: "Vamos que ya llega el fin de semana."
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "¿Qué puedo hacer por vos?"
+  - text: "¿Cómo te puedo ayudar?"
+  - text: "¿Hay algo en lo que pueda darte una mano?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "¡Me alegro!"
+  - text: "¡Que bueno! Por aquí todo bien, también."
+  - text: "Mejor así."
+  - text: "¡Cuánto me alegro!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Hasta la próxima. ¡Muchas gracias!"
+  - text: "¡A tu disposición por cualquier consulta! Muchas gracias."
+  - text: "¡Seguimos en contacto! Muchas gracias."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Soy un bot al servicio de Imagine One"
+  - text: "¡Soy un bot! Pero estoy muy bien entrenado =)"
+
+  utter_start:
+  - text: "¡Hola! Te damos la bienvenida a Telered. ¿En qué puedo ayudarte?"
+  - text: "Gracias por comunicarte con Telered. ¿Cómo te puedo ayudar?"
+  - text: "¡Bienvenido! Somos Telered. ¿Cómo podemos ayudarte hoy?"
+
+  utter_fallback:
+  - text: "No entendí tu consulta. ¿Podrías reformularla?"
+  - text: "Perdón, pero no te entendí. ¿Me brindarías más información?"
+  - text: "Disculpame, no entendí lo que quisiste decir. ¿Podrías explicarme mejor?"
+
+  utter_agradecimiento:
+  - text: "¡Gracias a vos!"
+  - text: "¡Muchas gracias a vos!"
 
 session_config:
   session_expiration_time: 60

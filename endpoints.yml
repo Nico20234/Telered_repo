@@ -1,7 +1,6 @@
-# This file contains the different endpoints your bot can use.
-
-# Server where the models are pulled from.
-# https://rasa.com/docs/rasa/model-storage#fetching-models-from-a-server
+endpoints:
+  action_endpoint:
+    url: "http://localhost:5055/webhook"
 
 #models:
 #  url: http://my-server.com/models/default_core@latest
