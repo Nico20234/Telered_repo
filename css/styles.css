@@ -60,7 +60,7 @@
     }
 
     .rw-launcher {
-        background-color: #009045 !important;
+        background-color: #026cad !important;
     }
 
     .rw-conversation-container .rw-sender {
@@ -68,8 +68,10 @@
         font-family: "Avant Garde Book BT",serif;
         font-size: 13px;
         height: 60px;
-        position: relative;
+       text-align: center;
         background-image: url("../images/footer.png")
+        background-size: cover; /* Esto hará que la imagen de fondo se ajuste para cubrir completamente el contenedor */
+        background-position: center;
     }
 
     .rw-conversation-container .rw-sender .rw-new-message {
