@@ -5,6 +5,8 @@ Para poder visualizar el chatbot:
 Descargar PyCharm 
           python 3.10.1
           instalar rasas versión 3.6.6 (pip install  rasa==3.6.6)
+          instalar pip install spacy 
+          instalar python -m spacy download es_core_news_sm
          
 Para prueba em la terminal utilizar el comando "rasa shell".
 abrir el index.html desde Pycharm para ver en localhost (open in => browser => Chrome)
