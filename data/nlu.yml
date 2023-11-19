@@ -31,6 +31,43 @@ nlu:
     - empezamos
     - comenzamos
 
+- intent: payment_methods
+  examples: |
+    - formas de pago
+    - hacer un pago
+    - metodos de pago
+    - como podemos pagar
+    - como puedo pagar
+    - medios de pago
+    - por donde pago
+    - transferir
+    - pagar
+
+
+- intent: mercadopago
+  examples: |    
+    - datos de mercado pago
+    - mercado pago
+    - qr
+    - mp
+
+- intent: efectivo
+  examples: |    
+    - efectivo
+    - enviar dinero
+    - retirar dinero
+    - cash
+    - plata
+    - sobre con plata
+    - sobre con dinero
+
+- intent: pago_telefonico
+    - pago por teléfono
+    - telefónico
+    - llamar para pagar
+    - llamo y pago
+    - pago telefónico
+
 - intent: affirm
   examples: |
     - si

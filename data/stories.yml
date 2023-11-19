@@ -28,3 +28,39 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: Medios de Pago telefónico
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+  - intent: pago_telefonico
+  - action: utter_pago_telefonico
+
+- story: Medios de Pago MP
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+  - intent: mercadopago
+  - action: utter_mercadopago
+
+- story: Medios de Pago Efectivo
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+  - intent: efectivo
+  - action: utter_efectivo
+
+
+- story: Medios de Pago MP
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+  - intent: mercadopago
+  - action: utter_mercadopago
+
+- story: Medios de Pago Efectivo
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+  - intent: efectivo
+  - action: utter_efectivo

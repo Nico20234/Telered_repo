@@ -6,3 +6,23 @@ rules:
   steps:
   - intent: start
   - action: utter_start
+
+- rule: Enviar medios de pago
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
+
+- rule: Enviar datos de Mercado Pago
+  steps:
+  - intent: mercadopago
+  - action: utter_mercadopago
+
+- rule: Pago en efectivo
+  steps:
+  - intent: efectivo
+  - action: utter_efectivo
+
+- rule: Pago telefónico
+  steps:
+  - intent: pago_telefonico
+  - action: utter_pago_telefonico

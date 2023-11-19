@@ -4,6 +4,10 @@ intents:
   - greet
   - goodbye
   - start
+  - payment_methods
+  - mercadopago
+  - efectivo
+  - pago_telefonico
   - affirm
   - deny
   - mood_great
@@ -58,6 +62,24 @@ responses:
   utter_agradecimiento:
   - text: "¡Gracias a vos!"
   - text: "¡Muchas gracias a vos!"
+
+  utter_payment_methods:
+  - text: "Podes abonar por transferencia o pago telefónico, Mercado Pago o efectivo. ¿Qué medio preferis?"
+  - text: "Recibimos pagos a través de pago telefónico, Mercado Pago, o en efectivo. ¿Cómo te queda mejor?"
+  - text: "¿Cómo preferis hacer el pago? Puede ser por pago telefónico, Mercado pago o en efectivo."
+
+
+  utter_efectivo:
+  - text: "¡OK! Puedes pedir en la sucursal de tu ciudad el resumen y paragarlo con Provincia NET Pagos, PagoFácil y Rapipago."
+
+
+  utter_mercadopago:
+    - text: "Primero ingresá a la APP de Mercado Pago y presioná el botón PAGAR SERVICIOS luego escanear el cófigo de barras y luego seleccioná la forma de pago y hace clik en botón PAGAR"
+      image: "https://www.telered.com.ar/img/contentImage/mpapp/app_3.png"
+
+  utter_pago_telefonico:
+    - text: "Podés pagar tu factura comunicándote al 0810-810-22253."
+    - text: "Puedes llamar al 0810-810-22253 y realizar el pago."
 
 session_config:
   session_expiration_time: 60

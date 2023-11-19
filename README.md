@@ -9,6 +9,8 @@ Descargar PyCharm
           instalar python -m spacy download es_core_news_sm
          
 Para prueba em la terminal utilizar el comando "rasa shell".
+Ejecutar rasa run -m models --enable-api --endpoints endpoints.yml --cors "*" 
+
 abrir el index.html desde Pycharm para ver en localhost (open in => browser => Chrome)
 
 A continuación se presentan las versiones de las dependencias para su correcto funcionamiento:
