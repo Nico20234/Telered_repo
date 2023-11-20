@@ -7,7 +7,7 @@ intents:
   - payment_methods
   - mercadopago
   - efectivo
-  - pago_telefonico
+  - pagotelefonico
   - affirm
   - deny
   - mood_great
@@ -77,7 +77,7 @@ responses:
     - text: "Primero ingresá a la APP de Mercado Pago y presioná el botón PAGAR SERVICIOS luego escanear el cófigo de barras y luego seleccioná la forma de pago y hace clik en botón PAGAR"
       image: "https://www.telered.com.ar/img/contentImage/mpapp/app_3.png"
 
-  utter_pago_telefonico:
+  utter_pagotelefonico:
     - text: "Podés pagar tu factura comunicándote al 0810-810-22253."
     - text: "Puedes llamar al 0810-810-22253 y realizar el pago."
 

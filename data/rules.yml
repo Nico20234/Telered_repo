@@ -24,5 +24,5 @@ rules:
 
 - rule: Pago telefónico
   steps:
-  - intent: pago_telefonico
-  - action: utter_pago_telefonico
+  - intent: pagotelefonico
+  - action: utter_pagotelefonico

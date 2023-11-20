@@ -61,7 +61,8 @@ nlu:
     - sobre con plata
     - sobre con dinero
 
-- intent: pago_telefonico
+- intent: pagotelefonico
+  examples: | 
     - pago por teléfono
     - telefónico
     - llamar para pagar
