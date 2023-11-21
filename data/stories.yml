@@ -64,3 +64,4 @@ stories:
   - action: utter_payment_methods
   - intent: efectivo
   - action: utter_efectivo
+

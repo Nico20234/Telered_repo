@@ -13,6 +13,8 @@ Ejecutar rasa run -m models --enable-api --endpoints endpoints.yml --cors "*"
 
 abrir el index.html desde Pycharm para ver en localhost (open in => browser => Chrome)
 
+Video de prototipo funcional: https://youtu.be/0ZcvEF07Yf8
+
 A continuación se presentan las versiones de las dependencias para su correcto funcionamiento:
 
 Package                      Version

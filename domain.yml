@@ -14,6 +14,8 @@ intents:
   - mood_unhappy
   - bot_challenge
   - agradecimiento
+  - informar_problema
+  - solicitar_reparacion
 
 responses:
   utter_greet:
@@ -80,6 +82,10 @@ responses:
   utter_pagotelefonico:
     - text: "Podés pagar tu factura comunicándote al 0810-810-22253."
     - text: "Puedes llamar al 0810-810-22253 y realizar el pago."
+
+  utter_informar_problema:
+    - text: "Por favor, indícame más detalles sobre el problema. ¿Es un problema con el cable, la conexión a internet o ambos?"
+
 
 session_config:
   session_expiration_time: 60
