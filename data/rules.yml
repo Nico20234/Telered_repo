@@ -27,7 +27,14 @@ rules:
   - intent: pagotelefonico
   - action: utter_pagotelefonico
 
+- rule: Respuesta agradecimiento
+  steps:
+  - intent: agradecimiento
+  - action: utter_agradecimiento
 
-
+- rule: Despedida
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
 
 

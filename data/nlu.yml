@@ -45,6 +45,15 @@ nlu:
     - transferir
     - pagar
 
+- intent: reclamo
+  examples: |
+    - reclamo
+    - consulta
+    - iniciar un reclamo
+    - queja
+    - demanda
+    - querella
+    - reclamación
 
 - intent: mercadopago
   examples: |    
@@ -132,6 +141,29 @@ nlu:
     - Mi servicio de cable no funciona
     - Tengo problemas con mi conexión a internet
     - Necesito ayuda con la reparación
+
+- intent: tipo_reclamo_admin
+  examples: |
+    - administrativo
+    - reclamo administrativo
+    - de administración
+
+- intent: tipo_reclamo_tecnico
+  examples: |
+    - técnico
+    - reparación
+    - para arreglar
+    - solucionar un problema técnico
+
+- intent: tipo_reclamo_internet
+  examples: |
+    - internet
+    - tengo un problema con internet
+    - no anda internet
+    - no funciona internet   
+    - se rompió el módem
+    - no funciona el módem 
+    - se va internet   
 
 - intent: solicitar_reparacion
   examples: |

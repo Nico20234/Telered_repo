@@ -16,6 +16,9 @@ intents:
   - agradecimiento
   - informar_problema
   - solicitar_reparacion
+  - tipo_reclamo_admin
+  - tipo_reclamo_tecnico
+  - tipo_reclamo_internet
 
 responses:
   utter_greet:
@@ -46,6 +49,7 @@ responses:
   - text: "Hasta la próxima. ¡Muchas gracias!"
   - text: "¡A tu disposición por cualquier consulta! Muchas gracias."
   - text: "¡Seguimos en contacto! Muchas gracias."
+  - text: "¡Seguimos en contacto! No dudes en comunicarte con Telered nuevamante."
 
   utter_iamabot:
   - text: "Soy un bot al servicio de Imagine One"
@@ -86,7 +90,19 @@ responses:
   utter_informar_problema:
     - text: "Por favor, indícame más detalles sobre el problema. ¿Es un problema con el cable, la conexión a internet o ambos?"
 
+  utter_reclamo:
+    - text: "Perfecto, ¿es administrativo o técnico?"
 
+  utter_tipo_reclamo_admin:
+   - text: "Perfecto, ¿Cuál es el reclamo administrativo?"
+
+  utter_tipo_reclamo_tecnico:
+   - text: "Perfecto, ¿Cuál es el reclamo técnico?"
+   - text: "Perfecto, ¿El inconveniente es por internet o cablevisión?"
+
+  utter_tipo_reclamo_internet:
+   - text: "Dejamos asentado en la báse de datos su inconvenient, dentro de las 72hs se comunican con ud.¿Tiene alguna otra consulta?"
+   - text: "Un técnico lo visitará dentro de las 72hs, ¿Tiene alguna otra consulta?"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -65,3 +65,28 @@ stories:
   - intent: efectivo
   - action: utter_efectivo
 
+- story: reclamo administrativo
+  steps:
+  - intent: tipo_reclamo
+  - action: utter_reclamogit
+  - intent: tipo_reclamo_admin
+  - action: utter_tipo_reclamo_admin
+  - intent: payment_methods
+  - action: utter_payment_methods
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: reclamo tecnico
+  steps:
+  - intent: tipo_reclamo
+  - action: utter_reclamo
+  - intent: tipo_reclamo_tecnico
+  - action: utter_tipo_reclamo_tecnico
+  - intent: tipo_reclamo_internet
+  - action: utter_tipo_reclamo_internet
+  - intent: deny
+  - action: utter_agradecimiento
+  - intent: goodbye
+  - action: utter_goodbye
