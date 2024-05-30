@@ -68,7 +68,7 @@ stories:
 - story: reclamo administrativo
   steps:
   - intent: tipo_reclamo
-  - action: utter_reclamogit
+  - action: utter_tipo_reclamo
   - intent: tipo_reclamo_admin
   - action: utter_tipo_reclamo_admin
   - intent: payment_methods
@@ -78,14 +78,29 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: reclamo tecnico
+- story: reclamo tecnico de internet
   steps:
   - intent: tipo_reclamo
-  - action: utter_reclamo
+  - action: utter_tipo_reclamo
   - intent: tipo_reclamo_tecnico
   - action: utter_tipo_reclamo_tecnico
   - intent: tipo_reclamo_internet
   - action: utter_tipo_reclamo_internet
+  - intent: deny
+  - action: utter_agradecimiento
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: reclamo cable solo
+  steps:
+  - intent: tipo_reclamo
+  - action: utter_tipo_reclamo
+  - intent: tipo_reclamo_tecnico
+  - action: utter_tipo_reclamo_tecnico
+  - intent: reclamo_cable_solo
+  - action: utter_reclamo_cable_solo_1
+  - action: utter_reclamo_cable_solo_2
+  - action: utter_reclamo_cable_solo_3
   - intent: deny
   - action: utter_agradecimiento
   - intent: goodbye

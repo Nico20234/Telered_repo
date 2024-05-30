@@ -37,6 +37,7 @@ nlu:
   examples: |
     - formas de pago
     - hacer un pago
+    - quiero saber cómo pagar
     - metodos de pago
     - como podemos pagar
     - como puedo pagar
@@ -79,6 +80,7 @@ nlu:
     - llamar para pagar
     - llamo y pago
     - pago telefónico
+    - quiero hacer el pago telefónico
 
 - intent: affirm
   examples: |
@@ -170,5 +172,26 @@ nlu:
     - Quiero programar una reparación
     - Necesito un técnico para arreglar mi servicio
     - ¿Pueden enviarme a alguien para reparar mi conexión?
+
+- intent: reclamo_cable_solo
+  examples: |
+    - Quiero arreglar el cable
+    - Cable
+    - por el cable
+    - es por cable
+    - tengo un problema con la señal de televisión
+    - la señal de televisión no funciona
+    - la televisión se ve mal
+
+- intent: tipo_reclamo
+  examples: |
+    - Quiero realizar un reclamo
+    - Quiero pedir un service 
+    - tengo un reclamo
+    - quiero reclamar una reparación
+    - Quiero programar una reparación
+    - Necesito un técnico para arreglar mi servicio
+    - ¿Pueden enviarme a alguien para reparar mi conexión?
+   
 
 constrain_similarities: true
