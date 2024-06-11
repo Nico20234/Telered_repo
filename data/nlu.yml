@@ -134,7 +134,6 @@ nlu:
     - gracias!
     - muchas gracias!
     - muchas gracias
-    - te agradezco
     - agradecido
     - muy agradecido
 
@@ -189,9 +188,47 @@ nlu:
     - Quiero pedir un service 
     - tengo un reclamo
     - quiero reclamar una reparación
-    - Quiero programar una reparación
-    - Necesito un técnico para arreglar mi servicio
-    - ¿Pueden enviarme a alguien para reparar mi conexión?
-   
+  
 
+- intent: out_of_scope
+  examples: |
+    - No sé de qué estás hablando
+    - Esto no tiene sentido
+    - ¿Qué?
+    - No te entiendo
+
+- intent: estado_cuenta
+  examples: |
+    - quiero saber mi estado de cuenta
+    - ¿cómo está mi cuenta?
+    - debo algo
+    - tengo deuda?
+
+- intent: numero_abonado
+  examples: |
+    - mi número de abonado es 88609802
+    - el número es 88609802
+    - mi numero es 88609802
+    - 88609802   
+
+- intent: numero_abonado_2
+  examples: |
+    - mi número de abonado es 89710412
+    - el número es 89710412
+    - mi numero es 89710412
+    - 89710412    
+
+- intent: numero_abonado_3
+  examples: |
+    - mi número de abonado es 89706866
+    - el número es 89706866
+    - mi numero es 89706866
+    - 89706866  
+
+- intent: numero_abonado_4
+  examples: |
+    - mi número de abonado es 89430668
+    - el número es 89430668
+    - mi numero es 89430668
+    - 89430668
 constrain_similarities: true

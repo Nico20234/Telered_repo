@@ -21,7 +21,12 @@ intents:
   - tipo_reclamo_internet
   - reclamo_cable_solo
   - tipo_reclamo
-
+  - out_of_scope
+  - estado_cuenta
+  - numero_abonado
+  - numero_abonado_2
+  - numero_abonado_3
+  - numero_abonado_4
 responses:
   utter_greet:
   - text: "¡Hola! ¿Como estas?"
@@ -49,12 +54,12 @@ responses:
 
   utter_goodbye:
   - text: "Hasta la próxima. ¡Muchas gracias!"
-  - text: "¡A tu disposición por cualquier consulta! Muchas gracias."
-  - text: "¡Seguimos en contacto! Muchas gracias."
+  - text: "¡A tu disposición por cualquier consulta!"
+  - text: "¡Seguimos en contacto!"
   - text: "¡Seguimos en contacto! No dudes en comunicarte con Telered nuevamante."
 
   utter_iamabot:
-  - text: "Soy un bot al servicio de Imagine One"
+  - text: "Soy un bot al servicio de Telered"
   - text: "¡Soy un bot! Pero estoy muy bien entrenado =)"
 
   utter_start:
@@ -93,7 +98,13 @@ responses:
     - text: "Por favor, indícame más detalles sobre el problema. ¿Es un problema con el cable, la conexión a internet o ambos?"
 
   utter_tipo_reclamo:
-    - text: "Perfecto, ¿es administrativo o técnico?"
+    - text: "Perfecto,Ingrerse su número de abonado por favor"
+
+  utter_tipo_reclamo_1:
+    - text: "Que tipo de relcamo desesa, ¿técnico o administrativo?"
+
+  utter_tipo_reclamo_2:
+    - text: "¿Desea algún otra consulta?"
 
   utter_tipo_reclamo_admin:
    - text: "Perfecto, ¿Cuál es el reclamo administrativo?"
@@ -103,8 +114,13 @@ responses:
    - text: "Perfecto, ¿El inconveniente es por internet o cablevisión?"
 
   utter_tipo_reclamo_internet:
+   - text: "Verifique que las fichas estén ajustadas"
+
+  utter_tipo_reclamo_internet_2:
+   - text: "Recuerde que si tiene el servicio de cable, verifique la instalación que no esté filtrado el modem."
+
+  utter_tipo_reclamo_internet_3:
    - text: "Dejamos asentado en la báse de datos su inconvenient, dentro de las 72hs se comunican con ud.¿Tiene alguna otra consulta?"
-   - text: "Un técnico lo visitará dentro de las 72hs, ¿Tiene alguna otra consulta?"
 
   utter_reclamo_cable_solo_1:
     - text: "Verifique que esté el cable coaxial conectado."
@@ -112,8 +128,31 @@ responses:
   utter_reclamo_cable_solo_2:
     - text: "Dejamos asentado el reclamo, dentro de las 72hs un técnico se acercará al domicilio."
 
-  utter_reclamo_cable_solo_3:
-    - text: "¿Desea algún otro reclamo?"
+  utter_estado_cuenta:
+    - text: "Usted se encuentra sin deuda"
+
+  utter_out_of_scope:
+    - text: "Lo siento, no entiendo tu mensaje. ¿Podrías reformularlo?"
+
+  utter_numero_abonado:
+    - text: "Bienvenido Nicolás Palazzolo "
+
+
+  utter_numero_abonado_2_1:
+    - text: "Bienvenido Agustín Peralata "
+
+
+  utter_numero_abonado_3.1:
+    - text: "Bienvenido Caludia Yaucobe"
+
+
+
+  utter_numero_abonado_4.1:
+    - text: "Bienvenido Viviana Rodriguez"
+
+
+
+
 
 
 

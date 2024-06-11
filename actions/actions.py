@@ -15,13 +15,13 @@
 
 #class ActionReclamoCableSolo(Action):
 
-  #  def name(self) -> str:
- #       return "action_reclamo_cable_solo"
+#  def name(self) -> str:
+#     return "action_reclamo_cable_solo"
 
- #   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict) -> list:
-  #      dispatcher.utter_message(response="utter_reclamo_cable_solo_1")
-   #     dispatcher.utter_message(response="utter_reclamo_cable_solo_2")
-    #    dispatcher.utter_message(response="utter_reclamo_cable_solo_3")
-     #   return []
+#   def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict) -> list:
+#        dispatcher.utter_message(response="utter_reclamo_cable_solo_1")
+#       dispatcher.utter_message(response="utter_reclamo_cable_solo_2")
+#      dispatcher.utter_message(response="utter_reclamo_cable_solo_3")
+#       return []
 
 

@@ -69,6 +69,9 @@ stories:
   steps:
   - intent: tipo_reclamo
   - action: utter_tipo_reclamo
+  - intent: numero_abonado_4
+  - action: utter_numero_abonado_4.1
+  - action: utter_tipo_reclamo_1
   - intent: tipo_reclamo_admin
   - action: utter_tipo_reclamo_admin
   - intent: payment_methods
@@ -82,10 +85,15 @@ stories:
   steps:
   - intent: tipo_reclamo
   - action: utter_tipo_reclamo
+  - intent: numero_abonado_2
+  - action: utter_numero_abonado_2_1
+  - action: utter_tipo_reclamo_1
   - intent: tipo_reclamo_tecnico
   - action: utter_tipo_reclamo_tecnico
   - intent: tipo_reclamo_internet
   - action: utter_tipo_reclamo_internet
+  - action: utter_tipo_reclamo_internet_2
+  - action: utter_tipo_reclamo_2
   - intent: deny
   - action: utter_agradecimiento
   - intent: goodbye
@@ -95,12 +103,37 @@ stories:
   steps:
   - intent: tipo_reclamo
   - action: utter_tipo_reclamo
+  - intent: numero_abonado_3
+  - action: utter_numero_abonado_3.1
+  - action: utter_tipo_reclamo_1
   - intent: tipo_reclamo_tecnico
   - action: utter_tipo_reclamo_tecnico
   - intent: reclamo_cable_solo
   - action: utter_reclamo_cable_solo_1
   - action: utter_reclamo_cable_solo_2
-  - action: utter_reclamo_cable_solo_3
+  - action: utter_tipo_reclamo_2
+  - intent: deny
+  - action: utter_agradecimiento
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: estado de cuenta
+  steps:
+  - intent: tipo_reclamo
+  - action: utter_tipo_reclamo
+  - intent: numero_abonado
+  - action: utter_numero_abonado
+  - action: utter_tipo_reclamo_1
+  - intent: tipo_reclamo_admin
+  - action: utter_tipo_reclamo_admin
+  - intent: estado_cuenta
+  - action: utter_estado_cuenta
+  - action: utter_tipo_reclamo_2
   - intent: deny
   - action: utter_agradecimiento
   - intent: goodbye
