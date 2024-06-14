@@ -27,11 +27,18 @@ rules:
   - intent: pagotelefonico
   - action: utter_pagotelefonico
 
+- rule: Responder que es un bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
 
+- rule: Reformular ante fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
 
 - rule: Despedida
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
 

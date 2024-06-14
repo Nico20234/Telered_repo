@@ -39,22 +39,13 @@ nlu:
     - hacer un pago
     - quiero saber cómo pagar
     - metodos de pago
-    - como podemos pagar
-    - como puedo pagar
+    - como podemos pagar?
+    - como puedo pagar?
     - medios de pago
     - por donde pago
     - transferir
     - pagar
-
-- intent: reclamo
-  examples: |
-    - reclamo
-    - consulta
-    - iniciar un reclamo
-    - queja
-    - demanda
-    - querella
-    - reclamación
+    - cuales son los métodos de pago?
 
 - intent: mercadopago
   examples: |    
@@ -132,16 +123,8 @@ nlu:
   examples: |
     - gracias
     - gracias!
-    - muchas gracias!
-    - muchas gracias
     - agradecido
     - muy agradecido
-
-- intent: informar_problema
-  examples: |
-    - Mi servicio de cable no funciona
-    - Tengo problemas con mi conexión a internet
-    - Necesito ayuda con la reparación
 
 - intent: tipo_reclamo_admin
   examples: |
@@ -166,11 +149,6 @@ nlu:
     - no funciona el módem 
     - se va internet   
 
-- intent: solicitar_reparacion
-  examples: |
-    - Quiero programar una reparación
-    - Necesito un técnico para arreglar mi servicio
-    - ¿Pueden enviarme a alguien para reparar mi conexión?
 
 - intent: reclamo_cable_solo
   examples: |
@@ -204,10 +182,24 @@ nlu:
     - debo algo
     - tengo deuda?
 
+- intent: precio_internet
+  examples: |
+    - cuanto sale internet
+    - cuál es el precio de internet
+    - cuanto cuesta internet?
+    - precio de internet?
+
+- intent: precio_cable
+  examples: |
+    - cuanto sale el cable
+    - cuál es el precio del cable
+    - cuanto cuesta el cable?
+    - precio del cable?
+
 - intent: numero_abonado
   examples: |
-    - mi número de abonado es 88609802
-    - el número es 88609802
+    - Nicolás Palazzolo  88609802
+    - Palazzolo 88609802
     - mi numero es 88609802
     - 88609802   
 
@@ -231,4 +223,26 @@ nlu:
     - el número es 89430668
     - mi numero es 89430668
     - 89430668
+
+- intent: abonado_nuevo
+  examples: |
+    - quiero darme de alta al servicio
+    - deseo ser abonado
+    - quiero ser cliente
+    - cómo puedo ser cliente?
+
+- intent: consulta
+  examples: |
+    - tengo una consulta
+    - consulta
+    - tengo una duda
+    - me podrías ayudar?    
+
+- intent: estado_service
+  examples: |
+    - cómo va mi service
+    - pedí un service, cuando vienen?
+    - tengo un service pedido, quería averiguar cuando vienen
+    - pedí que vengan por un service, cuando vienen? 
+
 constrain_similarities: true

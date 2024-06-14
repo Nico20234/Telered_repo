@@ -24,4 +24,8 @@
 #      dispatcher.utter_message(response="utter_reclamo_cable_solo_3")
 #       return []
 
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
+
 

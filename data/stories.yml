@@ -29,6 +29,8 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+
+
 - story: Medios de Pago telefónico
   steps:
   - intent: payment_methods
@@ -65,13 +67,11 @@ stories:
   - intent: efectivo
   - action: utter_efectivo
 
+
 - story: reclamo administrativo
   steps:
   - intent: tipo_reclamo
   - action: utter_tipo_reclamo
-  - intent: numero_abonado_4
-  - action: utter_numero_abonado_4.1
-  - action: utter_tipo_reclamo_1
   - intent: tipo_reclamo_admin
   - action: utter_tipo_reclamo_admin
   - intent: payment_methods
@@ -85,14 +85,12 @@ stories:
   steps:
   - intent: tipo_reclamo
   - action: utter_tipo_reclamo
-  - intent: numero_abonado_2
-  - action: utter_numero_abonado_2_1
-  - action: utter_tipo_reclamo_1
   - intent: tipo_reclamo_tecnico
   - action: utter_tipo_reclamo_tecnico
   - intent: tipo_reclamo_internet
   - action: utter_tipo_reclamo_internet
   - action: utter_tipo_reclamo_internet_2
+  - action: utter_tipo_reclamo_internet_3
   - action: utter_tipo_reclamo_2
   - intent: deny
   - action: utter_agradecimiento
@@ -101,40 +99,63 @@ stories:
 
 - story: reclamo cable solo
   steps:
-  - intent: tipo_reclamo
-  - action: utter_tipo_reclamo
-  - intent: numero_abonado_3
-  - action: utter_numero_abonado_3.1
-  - action: utter_tipo_reclamo_1
-  - intent: tipo_reclamo_tecnico
   - action: utter_tipo_reclamo_tecnico
   - intent: reclamo_cable_solo
   - action: utter_reclamo_cable_solo_1
   - action: utter_reclamo_cable_solo_2
   - action: utter_tipo_reclamo_2
-  - intent: deny
-  - action: utter_agradecimiento
-  - intent: goodbye
-  - action: utter_goodbye
 
-- story: out of scope
+
+- story: consulta (es abonado de Telered)
   steps:
-  - intent: out_of_scope
-  - action: utter_out_of_scope
+  - intent: consulta
+  - action: utter_consulta
+  - intent: affirm
+  - action: utter_pide_abonado
+  - intent: numero_abonado
+  - action: utter_numero_abonado
+
+- story: consulta (no es abonado de Telered)
+  steps:
+  - intent: consulta
+  - action: utter_consulta
+  - intent: deny
+  - action: utter_abonado_nuevo
+  - action: utter_tipo_reclamo_2
 
 - story: estado de cuenta
   steps:
-  - intent: tipo_reclamo
-  - action: utter_tipo_reclamo
-  - intent: numero_abonado
-  - action: utter_numero_abonado
-  - action: utter_tipo_reclamo_1
-  - intent: tipo_reclamo_admin
-  - action: utter_tipo_reclamo_admin
   - intent: estado_cuenta
   - action: utter_estado_cuenta
   - action: utter_tipo_reclamo_2
-  - intent: deny
-  - action: utter_agradecimiento
-  - intent: goodbye
-  - action: utter_goodbye
+
+- story: precio cable
+  steps:
+  - intent: precio_cable
+  - action: utter_precio_cable
+  - action: utter_tipo_reclamo_2
+
+- story: precio internet
+  steps:
+  - intent: precio_internet
+  - action: utter_precio_internet
+  - action: utter_tipo_reclamo_2
+
+- story: cliente nuevo
+  steps:
+  - intent: abonado_nuevo
+  - action: utter_abonado_nuevo
+  - action: utter_tipo_reclamo_2
+
+- story: estado de service
+  steps:
+  - intent: estado_service
+  - action: utter_pide_abonado
+  - intent: numero_abonado
+  - action: utter_numero_abonado
+  - action: utter_estado_service
+
+- story: respuesta abonado
+  steps:
+    - intent: numero_abonado
+    - action: utter_numero_abonado

@@ -14,8 +14,6 @@ intents:
   - mood_unhappy
   - bot_challenge
   - agradecimiento
-  - informar_problema
-  - solicitar_reparacion
   - tipo_reclamo_admin
   - tipo_reclamo_tecnico
   - tipo_reclamo_internet
@@ -27,6 +25,12 @@ intents:
   - numero_abonado_2
   - numero_abonado_3
   - numero_abonado_4
+  - precio_internet
+  - precio_cable
+  - abonado_nuevo
+  - consulta
+  - estado_service
+
 responses:
   utter_greet:
   - text: "¡Hola! ¿Como estas?"
@@ -53,7 +57,7 @@ responses:
   - text: "¡Cuánto me alegro!"
 
   utter_goodbye:
-  - text: "Hasta la próxima. ¡Muchas gracias!"
+  - text: "Hasta la próxima."
   - text: "¡A tu disposición por cualquier consulta!"
   - text: "¡Seguimos en contacto!"
   - text: "¡Seguimos en contacto! No dudes en comunicarte con Telered nuevamante."
@@ -67,15 +71,25 @@ responses:
   - text: "Gracias por comunicarte con Telered. ¿Cómo te puedo ayudar?"
   - text: "¡Bienvenido! Somos Telered. ¿Cómo podemos ayudarte hoy?"
 
-  utter_fallback:
+  utter_please_rephrase:
   - text: "No entendí tu consulta. ¿Podrías reformularla?"
   - text: "Perdón, pero no te entendí. ¿Me brindarías más información?"
   - text: "Disculpame, no entendí lo que quisiste decir. ¿Podrías explicarme mejor?"
 
+  utter_fallback:
+  - text: "No entendí tu consulta. ¿Podrías reformularla?"
+  - text: "Perdón, pero no te entendí. ¿Me brindarías más información?"
+  - text: "Disculpame, no entendí lo que quisiste decir. ¿Podrías explicarme mejor?"
   utter_agradecimiento:
   - text: "¡Gracias a vos!"
-  - text: "¡Muchas gracias a vos!"
 
+  utter_ask_numero_abonado:
+    - text: "Por favor, introduce tu número de abonado."
+  utter_precio_internet:
+    - text: "Internet de 40Mb $6000 por mes, 100Mb $10000 por mes, 300Mb $15000 y 500Mb $23000"
+
+  utter_precio_cable:
+    - text: "Pack básico $10704, pack HD por deco $5846, pack futbol $9000, señales premium $9000, paramount $1599"
   utter_payment_methods:
   - text: "Podes abonar por transferencia o pago telefónico, Mercado Pago o efectivo. ¿Qué medio preferis?"
   - text: "Recibimos pagos a través de pago telefónico, Mercado Pago, o en efectivo. ¿Cómo te queda mejor?"
@@ -94,14 +108,11 @@ responses:
     - text: "Podés pagar tu factura comunicándote al 0810-810-22253."
     - text: "Puedes llamar al 0810-810-22253 y realizar el pago."
 
-  utter_informar_problema:
-    - text: "Por favor, indícame más detalles sobre el problema. ¿Es un problema con el cable, la conexión a internet o ambos?"
+  utter_pide_abonado:
+    - text: "Perfecto, Ingrese su número de abonado por favor"
 
   utter_tipo_reclamo:
-    - text: "Perfecto,Ingrerse su número de abonado por favor"
-
-  utter_tipo_reclamo_1:
-    - text: "Que tipo de relcamo desesa, ¿técnico o administrativo?"
+    - text: "Que tipo de reclamo desea realizar, ¿técnico o administrativo?"
 
   utter_tipo_reclamo_2:
     - text: "¿Desea algún otra consulta?"
@@ -120,6 +131,9 @@ responses:
    - text: "Recuerde que si tiene el servicio de cable, verifique la instalación que no esté filtrado el modem."
 
   utter_tipo_reclamo_internet_3:
+    - text: "Si el modem no enciende ninguna luz Verificá las conexiones físicas de tu Cable Módem y el estado de las luces del mismo. El LED que indica “On Line o Cable” debe estar encendido de forma fija. Si el problema persiste comunicate con nuestros operadores de Soporte Técnico al 0810-810-22253, opción 2.."
+
+  utter_tipo_reclamo_internet_4:
    - text: "Dejamos asentado en la báse de datos su inconvenient, dentro de las 72hs se comunican con ud.¿Tiene alguna otra consulta?"
 
   utter_reclamo_cable_solo_1:
@@ -136,25 +150,26 @@ responses:
 
   utter_numero_abonado:
     - text: "Bienvenido Nicolás Palazzolo "
-
+    - text: "Bienvenido Nico, que necesitas? "
+    - text: "Bienvenido Nico, en que te puedo ayudar? "
 
   utter_numero_abonado_2_1:
-    - text: "Bienvenido Agustín Peralata "
-
+    - text: "Bienvenido Agustín Peralta "
 
   utter_numero_abonado_3.1:
     - text: "Bienvenido Caludia Yaucobe"
 
-
-
   utter_numero_abonado_4.1:
     - text: "Bienvenido Viviana Rodriguez"
 
+  utter_abonado_nuevo:
+    - text: "Para ser cliente de Telered debe acceder a la sucursal virtual y completar sus datos o bien acercarse a nuestras sucursales."
 
+  utter_consulta:
+      - text: "Encantado! ¿Sos abonado de Telered? "
 
-
-
-
+  utter_estado_service:
+      - text: "El pedido del service se encuentra vigente, dentro de las 72hs hábiles visitan su domicilio"
 
 session_config:
   session_expiration_time: 60
