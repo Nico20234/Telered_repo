@@ -30,6 +30,7 @@ intents:
   - abonado_nuevo
   - consulta
   - estado_service
+  - precio_cable_internet
 
 responses:
   utter_greet:
@@ -84,7 +85,7 @@ responses:
   - text: "¡Gracias a vos!"
 
   utter_ask_numero_abonado:
-    - text: "Por favor, introduce tu número de abonado."
+    - text: "Por favor, introduce tu nombre, apellido y  número de abonado."
   utter_precio_internet:
     - text: "Internet de 40Mb $6000 por mes, 100Mb $10000 por mes, 300Mb $15000 y 500Mb $23000"
 
@@ -171,6 +172,8 @@ responses:
   utter_estado_service:
       - text: "El pedido del service se encuentra vigente, dentro de las 72hs hábiles visitan su domicilio"
 
+  utter_precio_cable_internet:
+      - text: "El ppack duo cuesta $28000 el más caro de 500mb y 100Mb $15000"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

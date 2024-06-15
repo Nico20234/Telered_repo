@@ -236,13 +236,24 @@ nlu:
     - tengo una consulta
     - consulta
     - tengo una duda
-    - me podrías ayudar?    
+    - me podrías ayudar? 
+    - tengo hago una consulta
+    - puedo hacer una consulta?
 
 - intent: estado_service
   examples: |
     - cómo va mi service
     - pedí un service, cuando vienen?
     - tengo un service pedido, quería averiguar cuando vienen
-    - pedí que vengan por un service, cuando vienen? 
+    - pedí que vengan por un service, cuando vienen?
+    - cual es el estado de mi service?
 
+- intent: precio_cable_internet
+  examples: |
+    - cuanto sale cable e internet?
+    - precio de internet y cable?
+    - internet y cable cuanto sale?
+    - precio de internet y cable? 
+    - cuanto sale el pack duo?
+    - qué sale el pacl duo?
 constrain_similarities: true

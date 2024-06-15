@@ -154,8 +154,15 @@ stories:
   - intent: numero_abonado
   - action: utter_numero_abonado
   - action: utter_estado_service
+  - action: utter_tipo_reclamo_2
 
 - story: respuesta abonado
   steps:
     - intent: numero_abonado
     - action: utter_numero_abonado
+
+- story: precio internet y cable
+  steps:
+    - intent: precio_cable_internet
+    - action: utter_precio_cable_internet
+    - action: utter_tipo_reclamo_2
