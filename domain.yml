@@ -1,5 +1,6 @@
 version: "3.1"
 
+
 intents:
   - greet
   - goodbye
@@ -110,7 +111,7 @@ responses:
     - text: "Puedes llamar al 0810-810-22253 y realizar el pago."
 
   utter_pide_abonado:
-    - text: "Perfecto, Ingrese su número de abonado por favor"
+    - text: "Perfecto, introduce tu número de abonado, por favor."
 
   utter_tipo_reclamo:
     - text: "Que tipo de reclamo desea realizar, ¿técnico o administrativo?"
@@ -151,17 +152,8 @@ responses:
 
   utter_numero_abonado:
     - text: "Bienvenido Nicolás Palazzolo "
-    - text: "Bienvenido Nico, que necesitas? "
-    - text: "Bienvenido Nico, en que te puedo ayudar? "
 
-  utter_numero_abonado_2_1:
-    - text: "Bienvenido Agustín Peralta "
 
-  utter_numero_abonado_3.1:
-    - text: "Bienvenido Caludia Yaucobe"
-
-  utter_numero_abonado_4.1:
-    - text: "Bienvenido Viviana Rodriguez"
 
   utter_abonado_nuevo:
     - text: "Para ser cliente de Telered debe acceder a la sucursal virtual y completar sus datos o bien acercarse a nuestras sucursales."

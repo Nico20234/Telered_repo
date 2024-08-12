@@ -114,6 +114,7 @@ stories:
   - action: utter_pide_abonado
   - intent: numero_abonado
   - action: utter_numero_abonado
+  - action: utter_tipo_reclamo
 
 - story: consulta (no es abonado de Telered)
   steps:
@@ -122,6 +123,7 @@ stories:
   - intent: deny
   - action: utter_abonado_nuevo
   - action: utter_tipo_reclamo_2
+  - action: utter_tipo_reclamo
 
 - story: estado de cuenta
   steps:
@@ -166,3 +168,4 @@ stories:
     - intent: precio_cable_internet
     - action: utter_precio_cable_internet
     - action: utter_tipo_reclamo_2
+

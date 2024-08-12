@@ -203,26 +203,6 @@ nlu:
     - mi numero es 88609802
     - 88609802   
 
-- intent: numero_abonado_2
-  examples: |
-    - mi número de abonado es 89710412
-    - el número es 89710412
-    - mi numero es 89710412
-    - 89710412    
-
-- intent: numero_abonado_3
-  examples: |
-    - mi número de abonado es 89706866
-    - el número es 89706866
-    - mi numero es 89706866
-    - 89706866  
-
-- intent: numero_abonado_4
-  examples: |
-    - mi número de abonado es 89430668
-    - el número es 89430668
-    - mi numero es 89430668
-    - 89430668
 
 - intent: abonado_nuevo
   examples: |
@@ -255,5 +235,7 @@ nlu:
     - internet y cable cuanto sale?
     - precio de internet y cable? 
     - cuanto sale el pack duo?
-    - qué sale el pacl duo?
+    - qué sale el pack duo?
+   
+
 constrain_similarities: true

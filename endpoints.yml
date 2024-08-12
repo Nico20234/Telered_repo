@@ -1,5 +1,6 @@
 endpoints:
-  action_endpoint:
+
+action_endpoint:
     url: "http://localhost:5055/webhook"
 
 #models:
@@ -15,6 +16,7 @@ endpoints:
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
 # https://rasa.com/docs/rasa/tracker-stores
+
 
 #tracker_store:
 #    type: redis

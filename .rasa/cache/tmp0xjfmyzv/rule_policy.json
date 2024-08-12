@@ -1,0 +1,25 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"start\"}}]": "utter_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"start\"}}, {\"prev_action\": {\"action_name\": \"utter_start\"}, \"user\": {\"intent\": \"start\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mercadopago\"}}]": "utter_mercadopago",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mercadopago\"}}, {\"prev_action\": {\"action_name\": \"utter_mercadopago\"}, \"user\": {\"intent\": \"mercadopago\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"numero_abonado\"}}]": "action_fetch_abonado_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"numero_abonado\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_abonado_info\"}, \"user\": {\"intent\": \"numero_abonado\"}}]": "utter_tipo_reclamo_2",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"numero_abonado\"}}, {\"prev_action\": {\"action_name\": \"action_fetch_abonado_info\"}, \"user\": {\"intent\": \"numero_abonado\"}}, {\"prev_action\": {\"action_name\": \"utter_tipo_reclamo_2\"}, \"user\": {\"intent\": \"numero_abonado\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"payment_methods\"}}]": "utter_payment_methods",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"payment_methods\"}}, {\"prev_action\": {\"action_name\": \"utter_payment_methods\"}, \"user\": {\"intent\": \"payment_methods\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"start\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"start\"}}, {\"prev_action\": {\"action_name\": \"utter_start\"}, \"user\": {\"intent\": \"start\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent back"
+    ]
+  }
+}
